@@ -1,0 +1,145 @@
+/* Variáveis de Tema */
+:root {
+    --bg-color: #1d1b31;
+    --text-color: #ffffff;
+    --button-color: #6a0dad;
+    --input-bg: #33334d;
+    --input-border: #444;
+    --link-color: #b3b3ff;
+}
+
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+/* Container Principal */
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #262648;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Área da Imagem */
+.image-section {
+    /* background: url('https://via.placeholder.com/450') center center / cover no-repeat; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-section h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.image-section p {
+    font-size: 1.2em;
+}
+
+/* Área do Formulário */
+.form-section {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-color);
+}
+
+.form-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-section p {
+    color: var(--link-color);
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.form-section .input-group {
+    margin-bottom: 15px;
+}
+
+.form-section label {
+    font-size: 0.9em;
+    color: #ccc;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    color: var(--text-color);
+}
+
+.form-section button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form-section .social-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.form-section .social-buttons button {
+    width: 48%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .image-section,
+    .form-section {
+        width: 100%;
+    }
+}

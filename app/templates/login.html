@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Seção da Imagem -->
+        <div class="image-section">
+            <img src="/static/img/Inatel Branco.png" alt="Inatel Logo" style="max-width: 100%; height: auto;">
+        </div>
+
+        <!-- Seção do Formulário -->
+        <div class="form-section">
+            <h2 id="form-title">Entrar na Conta</h2>
+            <p id="toggle-text">
+                Não tem uma conta? <a href="#" onclick="toggleForm()"
+                    style="color: var(--link-color); text-decoration: none;" id="toggle-link">Criar uma conta</a>
+            </p>
+
+            <div id="name-group" class="input-group" style="display: none;">
+                <label for="first-name">Nome</label>
+                <input type="text" id="first-name" placeholder="Digite seu nome">
+            </div>
+
+            <div id="lastname-group" class="input-group" style="display: none;">
+                <label for="last-name">Sobrenome</label>
+                <input type="text" id="last-name" placeholder="Digite seu sobrenome">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+            </div>
+
+            <button type="button" id="submit-button" onclick="submitForm()">Entrar</button>
+
+            <div class="social-buttons">
+                <button><img src="/static/img/google.svg" alt="Google"> Entrar com Google</button>
+                <button><img src="/static/img/apple.svg" alt="Apple"> Entrar com Apple</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
